@@ -1,0 +1,13 @@
+#version 440 core
+
+out vec4 FragColor;
+
+struct LightColor {
+    vec3 color;
+
+};
+uniform LightColor lightcolor;
+
+void main() {
+	FragColor = vec4(lightcolor.color, 1.0f);
+};
